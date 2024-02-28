@@ -129,7 +129,7 @@ nav ul li a{
 }
 
 .model-button.selected {
-    border-color: #6f5499;
+    border: 3px solid #9d1168; /* #6f5499 */ 
 }
 
 #add-to-cart {

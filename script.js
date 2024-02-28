@@ -1,19 +1,3 @@
-/* document.querySelectorAll('.small-picture').forEach(function(picture) {
-    picture.addEventListener('click', function() {
-        document.querySelector('#main-picture').src = this.src;
-        document.querySelector('.small-picture.selected').classList.remove('selected');
-        this.classList.add('selected');
-    });
-});
-
-document.querySelectorAll('.model-button').forEach(function(button) {
-    button.addEventListener('click', function() {
-        document.querySelector('.model-button.selected').classList.remove('selected');
-        this.classList.add('selected');
-        document.querySelector('#price').textContent = this.dataset.price;
-        document.querySelector('#main-picture').src = 'bild' + this.dataset.model + '.jpeg';
-    });
-}); */
 
 // Funktion zum Wechseln des Hauptbildes
 function changeMainPicture(src) {
@@ -37,25 +21,36 @@ function highlightSelectedButton(button) {
     button.classList.add('selected');
 }
 
+// Funktion zum Aktualisieren des ausgewählten Bildes und des ausgewählten Buttons
+function updateSelection(model) {
+    // Finden Sie das Bild und den Button mit dem gegebenen Modell
+    var picture = document.querySelector('.small-picture[data-model="' + model + '"]');
+    var button = document.querySelector('.model-button[data-model="' + model + '"]');
+
+    // Aktualisieren Sie das Hauptbild und den Preis
+    changeMainPicture(picture.src);
+    changePrice(button.dataset.price);
+
+    // Hervorheben des ausgewählten Bildes und des ausgewählten Buttons
+    highlightSelectedPicture(picture);
+    highlightSelectedButton(button);
+}
+
 document.querySelectorAll('.small-picture').forEach(function(picture) {
     picture.addEventListener('click', function() {
-        changeMainPicture(this.src);
-        highlightSelectedPicture(this);
+        updateSelection(this.dataset.model);
     });
 });
 
 document.querySelectorAll('.model-button').forEach(function(button) {
     button.addEventListener('click', function() {
-        changePrice(this.dataset.price);
-        changeMainPicture('bild' + this.dataset.model + '.jpeg');
-        highlightSelectedButton(this);
+        updateSelection(this.dataset.model);
     });
 });
 
 
+
 /* ---------- accordeon ----------- */
-
-
 
 var acc = document.getElementsByClassName("accordion");
 var i;
