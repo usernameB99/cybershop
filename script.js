@@ -1,4 +1,19 @@
 
+/* ------------------- ------------------------------------- */
+/* ------------------- refresh ------------------- */
+
+// Funktion zum Aktualisieren des Preises beim Laden der Seite
+function updatePriceOnLoad() {
+    var selectedButton = document.querySelector('.model-button.selected');
+    if (selectedButton) {
+        changePrice(selectedButton.dataset.price);
+    }
+}
+updatePriceOnLoad();
+
+/* ------------------- ------------------------------------- */
+/* ------------------- main functions ------------------- */
+
 // Funktion zum Wechseln des Hauptbildes
 function changeMainPicture(src) {
     document.querySelector('#main-picture').src = src;
@@ -49,8 +64,8 @@ document.querySelectorAll('.model-button').forEach(function(button) {
 });
 
 
-
-/* ---------- accordeon ----------- */
+/* --------------------------------------------------------- */
+/* ------------------- accordeon ------------------- */
 
 var acc = document.getElementsByClassName("accordion");
 var i;
