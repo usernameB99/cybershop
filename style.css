@@ -258,19 +258,18 @@ nav ul li a{
   /* -------------- landing page ------------------------ */
 
   #landingPage-container {
-    background: url(assets/bg2.jpeg)no-repeat center center fixed;
+    background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url(assets/bg2.jpeg)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     text-align: center;
   }
 
 
   #shop-now-btn {
     position: relative;
-    margin-top: 8rem;
+    margin-top: 4rem;
     font-family: inherit;
     width: 200px;
     padding: 15px;
