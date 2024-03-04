@@ -253,3 +253,120 @@ nav ul li a{
   .active:after {
     content: "\2796"; 
   }
+
+
+  /* -------------- landing page ------------------------ */
+
+  #landingPage-container {
+    background: url(assets/bg2.jpeg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    text-align: center;
+  }
+
+
+  #shop-now-btn {
+    position: relative;
+    margin-top: 8rem;
+    font-family: inherit;
+    width: 200px;
+    padding: 15px;
+    color: white;
+    background: rgba(111, 84, 153, .95);
+    border: none;
+    font-size: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 0 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  #shop-now-btn:hover{
+    cursor: pointer;
+    background: rgba(80, 223, 219, .95);
+  }
+  
+/*   #shop-now-btn span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
+  
+  #shop-now-btn span:nth-child(1)
+  {
+    transform:rotate(0deg);
+  }
+  
+  #shop-now-btn span:nth-child(2)
+  {
+    transform:rotate(90deg);
+    height: 295%;
+  }
+  
+  #shop-now-btn span:nth-child(3)
+  {
+    transform:rotate(180deg);
+  }
+  
+  #shop-now-btn span:nth-child(4)
+  {
+    transform:rotate(270deg);
+    height: 295%;
+  }
+  
+  #shop-now-btn span:before
+  {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width:100%;
+    height: 4px;
+    background: #50dfdb;
+    animation: animate 4s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform:scaleX(0);
+      transform-origin: left;
+    }
+    50%
+    {
+      transform:scaleX(1);
+      transform-origin: left;
+    }
+    50.1%
+    {
+      transform:scaleX(1);
+      transform-origin: right;
+    }
+    100%
+    {
+      transform:scaleX(0);
+      transform-origin: right;
+    }
+  } */
+
+
+  
+
+/*   #shop-now-btn {
+    margin-top: 8rem;
+    font-family: inherit;
+    width: 200px;
+    padding: 15px;
+    color: white;
+    background: #6f5499;
+    font-size: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px;
+  } */
+  

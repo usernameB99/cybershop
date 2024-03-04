@@ -9,114 +9,43 @@
 
 </head>
 
-<header>
-    <!-- <h1 style="color: #17ecb2;">Cyber Store</h1> -->
-    <img id="logo-img" src="assets/logo/logo.jpg" alt="">
+<body id="landingPage-container">
 
-    <div>
-        <input id="search-field" type="text">
-        <label for="search-field"><span id="search-field-icon" class="material-symbols-outlined">search</span></label>
-    </div>
 
-    <span id="cart-icon" class="material-symbols-outlined">shopping_cart</span>
-    
-</header>
-    
-    <body>
+
+        <img id="logo-img" src="assets/logo/logo.jpg" style="border-radius: 20px; opacity: .95; margin-top: 4em; box-shadow: 0 0 10px white;">
         
-        <nav>
+        <nav style="background: rgba(255, 255, 255, 0.6); width: 550px; margin: auto; border-radius: 4px;">
             <ul>
-                <li class="active-tab"><a href="index.html">Backpack</a></li>
+                <li><a href="backpack.html">Backpack</a></li>
                 <li><a href="lightSaber.html">Lightsaber</a></li>
                 <li><a href="blaster.html">Blaster</a></li>
                 <li><a href="blade.html">Blade</a></li>
                 <li><a href="protection.html">Protection</a></li>
             </ul>
         </nav>
+
+        <a href="backpack.html">
+            <button id="shop-now-btn" style="border: 1px solid rgba(255, 255, 255, 0.8); width: 300px;">
+              Shop Now
+            </button>
+          </a>
+
+
+<!--         <a href="lightSaber.html">
+            <button id="shop-now-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Shop Now
+            </button>
+          </a> -->
         
 
-    <section class="content-container">
-
-        <div id="product-pictures">
-            <img id="main-picture" src="assets/products/backpack1.jpeg">
-            <div id="small-pictures">
-                <img class="small-picture selected" data-model="1" src="assets/products/backpack1.jpeg">
-                <img class="small-picture" data-model="2" src="assets/products/backpack2.jpeg">
-                <img class="small-picture" data-model="3" src="assets/products/backpack3.jpeg">
-            </div>
-        </div>
-
-        <div id="product-description">
-            <p class="product-link-desc">Backpacks / Kiroshi Gear / Stryder Backpack M Lineup</p>
-            <h1 class="product-title">Stryder Backpack M Lineup</h1>
-            <p id="price"></p>
-            <p class="price-subtitle">excl. tax zzgl. shipping</p>
-            <div id="model-selection">
-                <p id="chose-model-txt">Choose model:</p>
-                <button class="model-button selected" data-model="1" data-price="199€">Regular-Pack</button>
-                <button class="model-button" data-model="2" data-price="239€">Tech-Pack</button>
-                <button class="model-button" data-model="3" data-price="179€">Stealth-Pack</button>
-            </div>
-            <ul id="product-text">
-                <li><span class="material-icons-outlined">token</span> Lightweight, durable, and waterproof cunstruction</li>
-                <li><span class="material-icons-outlined">token</span> Isolated nano-backwiring undetectable by security scans</li>
-                <li><span class="material-icons-outlined">token</span> Bescar alloying deflects blaster fire</li>
-                <li><span class="material-icons-outlined">token</span> Electronic safe from emp</li>
-                <li><span class="material-icons-outlined">token</span> Shield blast effiency contributes same element</li>
-            </ul>
-            <button id="add-to-cart">Add to cart</button>
-        </div>
-    </section>
-
-
-    <section class="lower-description">
-
-         <p style="color: #888;">
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-             Ratione debitis explicabo sed impedit vel eum illo odio. Aperiam ea exercitationem temporibus nisi quibusdam doloremque. 
-             Debitis vel minima ratione eos aspernatur corrupti. Maxime consequuntur tempora sequi assumenda fuga, libero perferendis. 
-             Nostrum exercitationem reiciendis itaque officia assumenda. Eius dolorem ratione veritatis similique quis placeat rem, 
-             aliquam praesentium nam molestiae. Quisquam alias vitae est ea nesciunt laboriosam, vero quos dolor deserunt, illum culpa 
-             aspernatur reiciendis deleniti sed repudiandae libero incidunt ducimus fugiat officia aliquam impedit veniam facilis optio corrupti? 
-             In beatae libero tempore molestiae, mollitia maiores laudantium dolorum corporis quasi nihil, rem aliquid?
-         </p>
-
-        <button class="accordion">Product Details</button>
-        <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            
-            <button class="accordion">About the Brand</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                
-                <button class="accordion">Review & Ratings</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    
-    </section>
-
-
-
 </body>
-<footer>
-    
-
-
-
-
-    
+<footer>    
     <script src="script.js"></script>
 </footer>
+
 </html>
